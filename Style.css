@@ -1,0 +1,69 @@
+body {
+  display: block;
+  background-color: #191b1a;
+  align-items: center;
+  margin: 1rem;
+}
+img {
+  display: block;
+  width: 100%;
+  border: 1px rgb(232, 226, 226);
+  margin: 1em 0;
+}
+
+.card {
+  background-color: #f0fff8;
+  padding: 1rem;
+  border: 1px rgb(241, 238, 238);
+  border-radius: 15px;
+  max-width: 65ch;
+  overflow: hidden;
+}
+.card:hover {
+  opacity: 0.5;
+  background-color: #f2f2f2;
+  border: #191b1a;
+}
+.card-body {
+  font-size: 0.9rem;
+  padding: 0 var(--padding);
+}
+.card-header {
+  margin-top: 1rem;
+  padding: 1rem;
+  padding-bottom: 1rem;
+  font-family: monospace;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: minmax(65ch, 1 fr, repeat(auto-fit));
+  gap: 1rem;
+  justify-content: center;
+}
+
+.card-header.card-image > img {
+  display: block;
+  border-color: black;
+  padding: 0;
+  width: 50%;
+  margin: 1rem 0;
+  aspect-ratio: 13 / 9;
+  object-fit: cover;
+  max-height: 300px;
+  object-position: center;
+}
+
+h3 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding: 15px 20px;
+  font-style: italic, bold;
+  text-align: center;
+  margin-top: 10px;
+  color: rgb(21, 52, 21);
+}
+
+p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding-bottom: 10px;
+}
